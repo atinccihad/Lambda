@@ -4,8 +4,6 @@ package lambda_practice;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.Arrays;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /*
@@ -24,7 +22,7 @@ her ikisinde de path kopyalamis oluyoruz
 cevirirken EXCEPTION OLUSMASIN DIYE => throws IOException <= EKLEMELIYIZ
 buda lines altinda kirmizi uyari veriyor uzerine tiklayinca kendiliginden oluyor
 */
-public class Lambda02_DosyaOkuma {// yolu src/lambda_practice/siirler.txt
+public class Lambda02_ReadFolder {// yolu src/lambda_practice/siirler.txt
     //src/lambda_practice/siirler.txt
     public static void main(String[] args) throws IOException {
         System.out.println("\nTASK 01 --> siirler.txt dosyasini konsolda yazdiriniz -->  ");
