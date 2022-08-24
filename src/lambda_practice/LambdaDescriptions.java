@@ -1,6 +1,6 @@
 package lambda_practice;
 
-public class LambdaAciklamalar {
+public class LambdaDescriptions {
     /*
        /*
      ForEach:
