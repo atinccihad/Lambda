@@ -1,6 +1,6 @@
 package lambda_practice;
 
-public class Methodlarim {
+public class Methods {
    //seed (tohum) methodlar create edildi
 
         public static void yazdir(Object obj){

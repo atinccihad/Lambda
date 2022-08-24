@@ -1,7 +1,6 @@
 package lambda_practice;
 
 import java.util.*;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class Lambda01 {//okul projesinde listele vb lamda expression ile yapiniz
@@ -62,11 +61,11 @@ public class Lambda01 {//okul projesinde listele vb lamda expression ile yapiniz
         //lambda expression ile
         System.out.println("sayilar.stream().reduce(1,(a,b)-> a*b) = " +
                 sayilar.stream()
-                        .filter(Methodlarim::ciftElemaniBul)//method ref kullanildi kendi class imizda
+                        .filter(Methods::ciftElemaniBul)//method ref kullanildi kendi class imizda
                         // create ettigimiz seed methodu kulandik
                         .reduce(1, (a, b) -> a * b));
         //method referans ile
-        System.out.println(sayilar.stream().filter(Methodlarim::ciftElemaniBul)
+        System.out.println(sayilar.stream().filter(Methods::ciftElemaniBul)
                 .reduce(Math::multiplyExact));
     }
     //TODO task tek sayilarin  karesini buyukten kucuge
@@ -75,7 +74,7 @@ public class Lambda01 {//okul projesinde listele vb lamda expression ile yapiniz
                 filter(t-> t % 2 ==1)//tek olan rakamlari filtreeledim
                 .map(t-> t*t)//her tek sayinin  karesi alindi
                 .sorted(Comparator.reverseOrder())//buyukten kucuge srialandi
-                .forEach(Methodlarim::yazdir);//seed method kullanilarakl method ref ile yazdirldi
+                .forEach(Methods::yazdir);//seed method kullanilarakl method ref ile yazdirldi
     }
     // Task : List elemanlarini alafabetik buyuk harf ve  tekrarsiz print ediniz.
     public static void alfabetikBuyukHarfTekrarsiz(List<String> yemek) {
@@ -90,7 +89,7 @@ public class Lambda01 {//okul projesinde listele vb lamda expression ile yapiniz
                 .comparing(t-> t.toString()//her bir eleman strige cevrildi elemanin kendisi alindi
                         .charAt(t.toString().length()-1))//son karakter i charAt ile alindi
                 .reversed())////son harfe gore tersine sirlandi
-                .forEach(Methodlarim::yazdir);//yazdirldi
+                .forEach(Methods::yazdir);//yazdirldi
     }
     // Task : listin elemanlarin karakterlerinin cift sayili  karelerini hesaplayan,ve karelerini tekrarsiz
     // buyukten kucuge sirali  print ediniz..

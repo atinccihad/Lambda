@@ -31,11 +31,11 @@ public class Lambda02_ReadFolder {// yolu src/lambda_practice/siirler.txt
         Stream <String> akis=Files.lines(muti);//muti obj si akis obj sine atanarak Stream classsinda akisa alindi
         // akis.forEach(System.out::println);
         //buyuk harfe cevirdil
-        akis.map(String::toUpperCase).forEach(Methodlarim::yazdir);
+        akis.map(String::toUpperCase).forEach(Methods::yazdir);
         //2.yol
         Files.
                 lines(Path.of("src/lambda_practice/siirler.txt"))
-                .forEach(Methodlarim::yazdir);
+                .forEach(Methods::yazdir);
         System.out.println("\nTASK 1  --> siirler.txt dosyasindaki ilk satiri kucuk harflerle yazdirin  -->  ");
         System.out.println("\nTASK 2 --> siirler.txt dosyasinda basari kelimesinin kac satirda gectiginiz yazdiriniz -->  ");
         System.out.println("\nTASK 3  --> siirler.txt dosyasindaki ayni kelimeleri cikartarak y yazdiriniz. -->  ");
