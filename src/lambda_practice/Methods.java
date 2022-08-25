@@ -1,5 +1,7 @@
 package lambda_practice;
 
+
+
 public class Methods {
    //seed (tohum) methodlar create edildi
 
@@ -10,4 +12,5 @@ public class Methods {
             return  x % 2==0;
             // 2.yol return x % 2!=1;
         }
+
 }
