@@ -1,22 +1,24 @@
 package lambda_practice;
 
+import java.nio.file.Files;
 import java.util.Scanner;
 
 public class Lambda03 {
     //TASK 01 --> Structured Programming ve Functional Programming ile 1'den x'e kadar
     // tamsayilari toplayan bir program create ediniz.
     //Structured(AMELE) Programming
-    static Scanner scan=new Scanner(System.in);
+    static Scanner scan = new Scanner(System.in);
     static int son;
+    static int sum = 0;
+    static int bas = 1;
+
     public static int toplaAmele(int i) {
-        int sum=0;
-        int bas=1;
         System.out.println("1'den itibaren toplamak istediginiz sayiyi giriniz");
-        son=scan.nextInt();
-       while (son>=bas){
-           sum+=bas;
-           bas++;
-       }
+        son = scan.nextInt();
+        while (son >= bas) {
+            sum += bas;
+            bas++;
+        }
         System.out.println(sum);
         return sum;
     }
