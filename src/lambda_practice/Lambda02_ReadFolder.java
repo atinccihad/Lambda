@@ -30,6 +30,7 @@ public class Lambda02_ReadFolder {// yolu src/lambda_practice/siirler.txt
     //src/lambda_practice/siirler.txt
     public static void main(String[] args) throws IOException {//src/lambda_practice/siirler.txt
 
+        /********************************************************************************************************/
         System.out.println("\nTASK 01 --> siirler.txt dosyasini konsolda yazdiriniz -->  ");
         //1. yol
         Path muti = Path.of("src/lambda_practice/siirler.txt");//siirler dosyasi muti obj sine atandi
@@ -41,10 +42,13 @@ public class Lambda02_ReadFolder {// yolu src/lambda_practice/siirler.txt
         Files.
                 lines(Path.of("src/lambda_practice/siirler.txt"))
                 .forEach(Methods::yazdir);
+
+        /********************************************************************************************************/
         System.out.println("\nTASK 1  --> siirler.txt dosyasindaki ilk satiri buyuk harflerle yazdirin  -->  ");
         Files.lines(muti).map(String::toUpperCase).limit(1).forEach(System.out::println);
         Files.lines(muti).map(String::toUpperCase).findFirst().get();
 
+        /********************************************************************************************************/
         System.out.println("\nTASK 2 --> siirler.txt dosyasinda satir kelimesinin kac satirda gectiginiz yazdiriniz -->  ");
         System.out.println(Files.lines(muti).// akisa alindi
                 map(String::toLowerCase).// tamami kucuk harfe cevrildi

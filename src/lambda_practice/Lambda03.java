@@ -23,6 +23,7 @@ public class Lambda03 {
 
     //TODO Functional(cincix Programming
     public static int toplaCincix(int x) {
+
         return 0;
     }
 
