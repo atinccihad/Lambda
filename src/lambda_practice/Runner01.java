@@ -21,7 +21,7 @@ public class Runner01 extends Lambda01{//inherite birazdan
         System.out.println("**************");
         karkterEnFazla(menu);
         System.out.println("**************");
-        toplaAmele(son);
+        //toplaAmele(son);
         System.out.println("**************");
         alfabetikBuyukHarfTekrarsiz(menu);
 
